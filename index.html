@@ -3,10 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oliver Braitsch | Home</title>
+  <title>Oliver Braitsch</title>
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .center-home {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .home-content {
+      max-width: 600px;
+    }
+
+    .home-links {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- NAVBAR -->
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">Oliver Braitsch</a>
@@ -21,37 +45,21 @@
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-split">
-        <div>
-          <p class="eyebrow">Mechanical Engineering • Aerospace • Oregon State University</p>
-          <h1>Aerospace-focused engineering portfolio.</h1>
-          <p class="lead">Design, analysis, CAD, and capstone work.</p>
+  <!-- CENTERED HOME -->
+  <main class="center-home">
+    <div class="home-content">
+      <h1>Hi, I’m Oliver.</h1>
+      <p class="lead">
+        Mechanical Engineering student focused on aerospace systems, propulsion, and design.
+      </p>
 
-          <div class="button-row">
-            <a class="button primary" href="eportfolio.html">View ePortfolio</a>
-            <a class="button" href="projects.html">Projects</a>
-            <a class="button" href="resume.pdf" target="_blank">Resume</a>
-          </div>
-        </div>
-
-        <div class="simple-stack">
-          <div class="stat-card">
-            <div class="stat-label">Focus</div>
-            <div class="stat-value">Capstone Roll Control</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-label">Tools</div>
-            <div class="stat-value">Onshape • Python • MATLAB</div>
-          </div>
-        </div>
+      <div class="home-links">
+        <a class="button primary" href="resume.pdf" target="_blank">Resume</a>
+        <a class="button" href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+        <a class="button" href="contact.html">Contact</a>
       </div>
-    </section>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">© 2026 Oliver Braitsch</div>
-  </footer>
 </body>
 </html>
