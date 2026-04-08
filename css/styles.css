@@ -36,6 +36,55 @@ a {
   text-decoration: none;
 }
 
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -100px;
+  z-index: 200;
+  padding: 0.5rem 1rem;
+  background: var(--surface-solid);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.skip-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+a:focus-visible,
+.button:focus-visible,
+.link-inline:focus-visible,
+.nav-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .skip-link {
+    transition: none;
+  }
+
+  .fade-in,
+  .fade-in.delay-1,
+  .fade-in.delay-2 {
+    animation: none !important;
+  }
+}
+
 .container {
   width: min(calc(100% - 2rem), var(--max));
   margin: 0 auto;
@@ -287,6 +336,18 @@ p {
 
 .home-content {
   max-width: 680px;
+}
+
+.home-content .lead {
+  margin: 0.25rem auto 0;
+}
+
+.eportfolio-stack {
+  margin-top: 2rem;
+}
+
+.card-link-row {
+  margin-top: 0.6rem;
 }
 
 .home-links {
