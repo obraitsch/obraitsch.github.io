@@ -4,11 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Oliver Braitsch — Mechanical Engineering student at Oregon State University, aerospace focus. Resume, experience, projects, and contact." />
+  <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
   <title>Oliver Braitsch</title>
+  <link rel="canonical" href="https://obraitsch.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Oliver Braitsch" />
+  <meta property="og:title" content="Oliver Braitsch" />
+  <meta property="og:description" content="Mechanical Engineering student at Oregon State University, aerospace focus. Resume, experience, projects, and contact." />
+  <meta property="og:url" content="https://obraitsch.github.io/" />
+  <meta property="og:image" content="https://obraitsch.github.io/assets/images/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Oliver Braitsch" />
+  <meta name="twitter:description" content="Mechanical Engineering student at Oregon State University, aerospace focus. Resume, experience, projects, and contact." />
+  <meta name="twitter:image" content="https://obraitsch.github.io/assets/images/og-image.svg" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Oliver Braitsch",
+        "url": "https://obraitsch.github.io/"
+      },
+      {
+        "@type": "Person",
+        "name": "Oliver Braitsch",
+        "url": "https://obraitsch.github.io/",
+        "jobTitle": "Mechanical Engineering Student",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Oregon State University"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/oliver-braitsch"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -25,24 +64,35 @@
     </div>
   </header>
 
-  <main id="main" class="center-home">
-    <div class="home-content fade-in">
-      <p class="kicker">Mechanical Engineering • Aerospace • Oregon State University</p>
-      <h1>Hi, I’m Oliver.</h1>
-      <p class="lead">
-        Undergrad at Oregon State University majoring in Mechanical Engineering with a focus in Aerospace.
-      </p>
+  <main id="main" class="center-home home-hero-page">
+    <div class="home-hero">
+      <div class="home-avatar fade-in" role="img" aria-label="Oliver Braitsch initials">
+        <span class="home-avatar__initials" aria-hidden="true">OB</span>
+      </div>
+      <div class="home-content fade-in delay-1">
+        <p class="kicker">Mechanical Engineering • Aerospace • Oregon State University</p>
+        <h1>Hi, I’m Oliver.</h1>
+        <p class="lead">
+          Undergrad at Oregon State University majoring in Mechanical Engineering with a focus in Aerospace.
+        </p>
 
-      <div class="home-links fade-in delay-1">
-        <a class="button primary" href="assets/files/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-        <a class="button" href="https://www.linkedin.com/in/oliver-braitsch" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="button" href="contact.html">Contact</a>
+        <div class="home-links fade-in delay-2">
+          <a class="button primary" href="assets/files/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a class="button" href="https://www.linkedin.com/in/oliver-braitsch" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="button" href="contact.html">Contact</a>
+        </div>
       </div>
     </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">© 2026 Oliver Braitsch</div>
+    <div class="container footer-inner">
+      <span>© 2026 Oliver Braitsch</span>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/oliver-braitsch" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
   </footer>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>

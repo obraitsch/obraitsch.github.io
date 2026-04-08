@@ -4,7 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Contact Oliver Braitsch — email and LinkedIn for opportunities, collaboration, or questions." />
+  <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
   <title>Oliver Braitsch | Contact</title>
+  <link rel="canonical" href="https://obraitsch.github.io/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Oliver Braitsch" />
+  <meta property="og:title" content="Oliver Braitsch | Contact" />
+  <meta property="og:description" content="Email and LinkedIn for opportunities, collaboration, or questions." />
+  <meta property="og:url" content="https://obraitsch.github.io/contact.html" />
+  <meta property="og:image" content="https://obraitsch.github.io/assets/images/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Oliver Braitsch | Contact" />
+  <meta name="twitter:description" content="Email and LinkedIn for opportunities, collaboration, or questions." />
+  <meta name="twitter:image" content="https://obraitsch.github.io/assets/images/og-image.svg" />
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -26,7 +40,7 @@
   </header>
 
   <main id="main">
-    <section class="center-home">
+    <section>
       <div class="contact-wrapper fade-in">
         <h2>Contact</h2>
         <p class="lead">
@@ -35,15 +49,14 @@
 
         <div class="contact-cards fade-in delay-1">
           <div class="card contact-card">
-            <p class="kicker">Email</p>
             <h3>Email</h3>
-            <p class="muted">
+            <p class="muted contact-line">
               <a class="link-inline" href="mailto:obraitsch@gmail.com">obraitsch@gmail.com</a>
+              <button type="button" class="copy-btn" data-copy="obraitsch@gmail.com" aria-label="Copy email address">Copy</button>
             </p>
           </div>
 
           <div class="card contact-card">
-            <p class="kicker">LinkedIn</p>
             <h3>LinkedIn</h3>
             <p class="muted">
               <a class="link-inline" href="https://www.linkedin.com/in/oliver-braitsch" target="_blank" rel="noopener noreferrer">linkedin.com/in/oliver-braitsch</a>
@@ -55,7 +68,13 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">© 2026 Oliver Braitsch</div>
+    <div class="container footer-inner">
+      <span>© 2026 Oliver Braitsch</span>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/oliver-braitsch" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
   </footer>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>
