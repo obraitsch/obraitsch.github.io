@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">Oliver Braitsch</a>
@@ -23,27 +24,37 @@
 
   <main>
     <section class="center-home">
-      <div class="container">
-        <div class="home-content">
-          <h2>Contact</h2>
-          <p class="lead" style="margin: 0.5rem auto 0; text-align: center;">
-            Feel free to reach out for opportunities, collaboration, or questions.
-          </p>
+      <div class="contact-wrapper">
 
-          <div class="grid-2" style="margin-top: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-            <div class="card" style="text-align: center;">
-              <p class="kicker">Email</p>
-              <h3>Your Email</h3>
-              <p class="muted">your-email@example.com</p>
-            </div>
+        <h2>Contact</h2>
+        <p class="lead">
+          Feel free to reach out for opportunities, collaboration, or questions.
+        </p>
 
-            <div class="card" style="text-align: center;">
-              <p class="kicker">LinkedIn</p>
-              <h3>LinkedIn</h3>
-              <p class="muted">linkedin.com/in/your-profile</p>
-            </div>
+        <div class="contact-cards">
+
+          <div class="card contact-card">
+            <p class="kicker">Email</p>
+            <h3>Email</h3>
+            <p class="muted">
+              <a class="link-inline" href="mailto:your-email@example.com">
+                your-email@example.com
+              </a>
+            </p>
           </div>
+
+          <div class="card contact-card">
+            <p class="kicker">LinkedIn</p>
+            <h3>LinkedIn</h3>
+            <p class="muted">
+              <a class="link-inline" href="https://linkedin.com/in/your-profile" target="_blank">
+                linkedin.com/in/your-profile
+              </a>
+            </p>
+          </div>
+
         </div>
+
       </div>
     </section>
   </main>
@@ -51,5 +62,6 @@
   <footer class="site-footer">
     <div class="container">© 2026 Oliver Braitsch</div>
   </footer>
+
 </body>
 </html>
