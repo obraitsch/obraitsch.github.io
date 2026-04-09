@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Beyond OSU II ePortfolio — resume, cover letter, and design proposal (ePortfolio Start)." />
+  <meta name="description" content="Capstone ePortfolio — Beyond OSU II: resume, cover letter, and design proposal." />
   <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
-  <title>Oliver Braitsch | Beyond OSU II ePortfolio</title>
+  <title>Oliver Braitsch | Capstone ePortfolio</title>
   <link rel="canonical" href="https://obraitsch.github.io/eportfolio.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Oliver Braitsch" />
-  <meta property="og:title" content="Oliver Braitsch | Beyond OSU II ePortfolio" />
-  <meta property="og:description" content="Beyond OSU II ePortfolio: resume, cover letter, and design proposal." />
+  <meta property="og:title" content="Oliver Braitsch | Capstone ePortfolio" />
+  <meta property="og:description" content="Capstone ePortfolio: resume, cover letter, and design proposal (Beyond OSU II)." />
   <meta property="og:url" content="https://obraitsch.github.io/eportfolio.html" />
   <meta property="og:image" content="https://obraitsch.github.io/assets/images/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Oliver Braitsch | Beyond OSU II ePortfolio" />
-  <meta name="twitter:description" content="Beyond OSU II ePortfolio: resume, cover letter, and design proposal." />
+  <meta name="twitter:title" content="Oliver Braitsch | Capstone ePortfolio" />
+  <meta name="twitter:description" content="Capstone ePortfolio: resume, cover letter, and design proposal (Beyond OSU II)." />
   <meta name="twitter:image" content="https://obraitsch.github.io/assets/images/og-image.png" />
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,6 +42,62 @@
     .eportfolio-page h2 {
       margin: 2rem 0 1rem;
     }
+    .eportfolio-toc {
+      margin: 1.5rem 0 0;
+      padding: 1rem 1.15rem 1rem 1.35rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+    .eportfolio-toc > p {
+      margin: 0 0 0.65rem;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--kicker-color);
+    }
+    .eportfolio-toc ol {
+      margin: 0;
+      padding-left: 1.25rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .eportfolio-toc a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .eportfolio-toc a:hover {
+      text-decoration: underline;
+    }
+    .eportfolio-artifacts {
+      margin: 0;
+      padding-left: 0;
+      list-style: none;
+      counter-reset: artifact;
+    }
+    .eportfolio-artifacts > li {
+      list-style: none;
+      counter-increment: artifact;
+      position: relative;
+      padding-left: 0;
+      margin-bottom: 1.25rem;
+      scroll-margin-top: 4.5rem;
+    }
+    .eportfolio-artifacts > li:last-child {
+      margin-bottom: 0;
+    }
+    .eportfolio-artifacts > li::before {
+      content: counter(artifact) ".";
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+    .eportfolio-artifacts .card h3 {
+      margin-top: 0;
+    }
     .eportfolio-filename {
       font-size: 0.82rem;
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
@@ -66,46 +122,57 @@
       <div class="container">
         <div class="section-intro fade-in">
           <p class="kicker">Beyond OSU II Core Requirement</p>
-          <h1>Beyond OSU II ePortfolio</h1>
+          <h1>Capstone ePortfolio</h1>
           <p class="lead">
-            Essential Assignment (ePortfolio Start): public submission link —
+            Essential Assignment for Beyond OSU II: career documents and my final individual design proposal for capstone, hosted on this public page.
+            Submission URL:
             <a class="link-inline" href="https://obraitsch.github.io/eportfolio.html">https://obraitsch.github.io/eportfolio.html</a>
           </p>
-          <p class="muted" style="margin-top: 0.65rem;">
-            Materials are labeled by purpose; PDFs use clear file names (<code>resume.pdf</code>, <code>coverletter.pdf</code>, <code>designproposal.pdf</code>).
-          </p>
         </div>
 
-        <h2>Required artifacts</h2>
+        <nav class="eportfolio-toc fade-in delay-1" aria-label="Table of contents">
+          <p>Table of contents</p>
+          <ol>
+            <li><a href="#artifact-1">Professional resume</a> (<code>resume.pdf</code>)</li>
+            <li><a href="#artifact-2">Cover letter</a> (<code>coverletter.pdf</code>)</li>
+            <li><a href="#artifact-3">Final individual design proposal</a> (<code>designproposal.pdf</code>)</li>
+          </ol>
+        </nav>
 
-        <div class="simple-stack eportfolio-stack fade-in delay-1">
-          <div class="card">
-            <h3>Professional resume</h3>
-            <p class="muted">Education, engineering experience, and technical skills.</p>
-            <p class="eportfolio-filename">resume.pdf</p>
-            <p class="card-link-row">
-              <a class="link-inline" href="assets/files/resume.pdf" target="_blank" rel="noopener noreferrer">Open resume (PDF)</a>
-            </p>
-          </div>
+        <h2 id="current-artifacts">Current artifacts</h2>
 
-          <div class="card">
-            <h3>Cover letter</h3>
-            <p class="muted">General professional cover letter.</p>
-            <p class="eportfolio-filename">coverletter.pdf</p>
-            <p class="card-link-row">
-              <a class="link-inline" href="assets/files/coverletter.pdf" target="_blank" rel="noopener noreferrer">Open cover letter (PDF)</a>
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Final individual design proposal</h3>
-            <p class="muted">Capstone design proposal: active roll control for a solid rocket (trim-tab concept, AIAA Student Competition Rocket Team).</p>
-            <p class="eportfolio-filename">designproposal.pdf</p>
-            <p class="card-link-row">
-              <a class="link-inline" href="assets/files/designproposal.pdf" target="_blank" rel="noopener noreferrer">Open design proposal (PDF)</a>
-            </p>
-          </div>
-        </div>
+        <ol class="eportfolio-artifacts simple-stack eportfolio-stack fade-in delay-1">
+          <li id="artifact-1">
+            <div class="card">
+              <h3>Professional resume</h3>
+              <p class="muted">Education, engineering experience, and technical skills.</p>
+              <p class="eportfolio-filename">resume.pdf</p>
+              <p class="card-link-row">
+                <a class="link-inline" href="assets/files/resume.pdf" target="_blank" rel="noopener noreferrer">Open resume (PDF)</a>
+              </p>
+            </div>
+          </li>
+          <li id="artifact-2">
+            <div class="card">
+              <h3>Cover letter</h3>
+              <p class="muted">General professional cover letter.</p>
+              <p class="eportfolio-filename">coverletter.pdf</p>
+              <p class="card-link-row">
+                <a class="link-inline" href="assets/files/coverletter.pdf" target="_blank" rel="noopener noreferrer">Open cover letter (PDF)</a>
+              </p>
+            </div>
+          </li>
+          <li id="artifact-3">
+            <div class="card">
+              <h3>Final individual design proposal</h3>
+              <p class="muted">Capstone design proposal: active roll control for a solid rocket (trim-tab concept, AIAA Student Competition Rocket Team).</p>
+              <p class="eportfolio-filename">designproposal.pdf</p>
+              <p class="card-link-row">
+                <a class="link-inline" href="assets/files/designproposal.pdf" target="_blank" rel="noopener noreferrer">Open design proposal (PDF)</a>
+              </p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
   </main>
