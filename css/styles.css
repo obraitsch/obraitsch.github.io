@@ -716,18 +716,21 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;
-  margin-top: 0.9rem;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
 }
 
-.skill-tags span {
+.skill-tags li {
   font-size: 0.8rem;
-  line-height: 1;
+  line-height: 1.35;
   padding: 0.5rem 0.72rem;
   border-radius: 999px;
   background: var(--accent-soft);
   border: 1px solid var(--tag-border);
   color: var(--text);
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 100%;
 }
 
 .contact-wrapper {
