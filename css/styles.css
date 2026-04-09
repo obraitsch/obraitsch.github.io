@@ -429,6 +429,18 @@ p {
   margin-top: 1rem;
 }
 
+.home-status {
+  margin-top: 0.85rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  max-width: 38rem;
+}
+
+.home-status strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
 .home-intro-cta {
   margin-top: 0.65rem;
   font-size: 0.98rem;
