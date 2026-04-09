@@ -477,6 +477,111 @@ p {
   margin-top: 0.85rem;
 }
 
+.project-card__cta {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.project-detail-back {
+  margin-bottom: 1.5rem;
+}
+
+.project-detail-back a {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.project-detail-back a:hover {
+  color: var(--accent);
+}
+
+.project-detail-title {
+  margin-bottom: 2rem;
+}
+
+.project-detail-title h1 {
+  margin-bottom: 0.5rem;
+}
+
+.project-detail-title .kicker {
+  margin-bottom: 0.5rem;
+}
+
+.project-detail-section {
+  margin-bottom: 2.75rem;
+}
+
+.project-detail-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.project-detail-section > h2 {
+  margin-bottom: 0.75rem;
+}
+
+.project-detail-note {
+  margin-bottom: 1rem;
+}
+
+.project-detail-section .lead {
+  max-width: 100%;
+}
+
+.project-prose p + p {
+  margin-top: 0.85rem;
+}
+
+.resource-list {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.resource-list li {
+  margin-bottom: 0.6rem;
+}
+
+.resource-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}
+
+.resource-card {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  margin-bottom: 0.65rem;
+}
+
+.resource-card:last-child {
+  margin-bottom: 0;
+}
+
+.resource-card__label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--kicker-color);
+  margin-bottom: 0.35rem;
+}
+
+.resource-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
 .contact-line {
   display: flex;
   align-items: center;
