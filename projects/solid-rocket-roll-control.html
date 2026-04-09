@@ -50,38 +50,99 @@
           <p class="kicker">Jan 2026 – Jun 2026 · Senior Capstone — AIAA, Oregon State University</p>
           <h1>Active Roll Control System for Solid Rocket</h1>
           <p class="lead">
-            Design of a servo-actuated trim tab integrated inside a 0.125 in fin to provide roll authority for a solid-propellant rocket, with CAD integration and aerodynamic validation.
+            Design and development of an active roll-control system for the OSU AIAA Student Competition Rocket Team (SCRT), using an internally actuated trim-tab mechanism integrated within the existing fin geometry.
           </p>
         </header>
 
         <div class="project-detail-section fade-in delay-1 project-prose">
           <h2>Overview</h2>
           <p class="lead">
-            This capstone addresses roll control for a solid rocket by packaging a trim-tab mechanism within the existing fin geometry. The work spans concept selection, detailed mechanical design, and analysis to verify that the system can generate sufficient rolling moment without unacceptable mass or reliability penalties.
+            This capstone starts from a blank-sheet problem: the SCRT rocket had no active roll-control hardware in the baseline configuration. Based on the design proposal, the project objective is to reduce average roll rate by at least one order of magnitude relative to baseline flight data while preserving manufacturability, reliability, and compatibility with competition constraints.
           </p>
+        </div>
+
+        <div class="project-detail-section fade-in delay-1 project-prose">
+          <h2>Project goals and requirements</h2>
+          <ul class="list">
+            <li>Integrate control hardware inside existing fin geometry, including a 0.125 in fin-thickness constraint.</li>
+            <li>Provide sufficient control authority to exceed estimated worst-case aerodynamic rolling moment.</li>
+            <li>Support a fail-safe behavior that returns control surfaces to neutral during power or system faults.</li>
+            <li>Maintain a design path that is scalable to full-scale SCRT vehicle architecture.</li>
+            <li>Ensure practical manufacturability and assembly with team tools and build workflow.</li>
+          </ul>
+        </div>
+
+        <div class="project-detail-section fade-in delay-1 project-prose">
+          <h2>Concept development and downselect</h2>
+          <p class="lead">
+            Multiple concepts were evaluated (canards, trim tabs, spinnerons, fin-can rotation, cold-gas, thrust vector control, differential fin control). A weighted decision matrix was then used to compare concepts against team priorities.
+          </p>
+          <ul class="list">
+            <li>Decision weighting: Control Authority (25%), Mass (20%), Complexity (10%), Applicability (15%), Reliability (15%), Cost (15%).</li>
+            <li>High-authority options like thrust vector control and cold-gas were screened out due to complexity, mass, and integration risk.</li>
+            <li>Trim tabs ranked highest in the proposal (weighted score: 4.15) and were selected as the go-forward architecture.</li>
+          </ul>
         </div>
 
         <div class="project-detail-section fade-in delay-1 project-prose">
           <h2>Technical work</h2>
           <ul class="list">
-            <li>Developed a servo-actuated trim tab system integrated within a 0.125 in fin envelope.</li>
-            <li>Built and integrated component models in Onshape and Siemens NX for fit, interfaces, and drawings.</li>
-            <li>Performed aerodynamic analysis to estimate roll control authority and support design decisions.</li>
-            <li>Ran trade studies across eight or more concepts to balance mass, complexity, and reliability.</li>
+            <li>Developed an internally mounted, servo-driven trim-tab system with a shaft-and-hub architecture through the fin root.</li>
+            <li>Integrated the trim tab, hinge shaft, support structure, and coupling hardware into CAD while preserving flush neutral alignment for low drag.</li>
+            <li>Used aerodynamic roll-moment reasoning to size deflection behavior and verify that modest tab angles can generate meaningful corrective authority.</li>
+            <li>Mapped actuator needs to hinge-moment loading and servo-selection criteria (torque, response speed, resolution, thermal limits).</li>
+            <li>Established a validation path including bench torque/response testing, structural checks in hinge regions, and baseline-vs-controlled flight roll-rate comparison.</li>
           </ul>
+        </div>
+
+        <div class="project-detail-section fade-in delay-1 project-prose">
+          <h2>Risk and validation strategy</h2>
+          <ul class="list">
+            <li>Primary risks identified: hinge-region structural stress, servo under-torque, trim-tab flutter, and constrained packaging conflicts.</li>
+            <li>Mitigation approach: incremental verification from bench tests to subsystem prototype to integrated flight testing.</li>
+            <li>Planned checks include stress/deflection review, simulated load torque tests, and control stability evaluation to avoid oscillatory over-correction.</li>
+            <li>Final success metric remains direct comparison of roll-rate data against uncontrolled baseline flights.</li>
+          </ul>
+        </div>
+
+        <div class="project-detail-section fade-in delay-1">
+          <h2>CAD and drawings gallery</h2>
+          <p class="lead project-detail-note">
+            Image placeholders are ready below. Add your images to <code>assets/images/projects/roll-control/</code>, then swap each placeholder with an <code>&lt;img&gt;</code> tag.
+          </p>
+          <div class="project-gallery">
+            <article class="gallery-item">
+              <div class="gallery-item__media">Image placeholder</div>
+              <h3>Overall CAD assembly</h3>
+              <p>Main integration view showing fin, trim tab, hinge shaft, and servo packaging.</p>
+            </article>
+            <article class="gallery-item">
+              <div class="gallery-item__media">Image placeholder</div>
+              <h3>Trim tab deflection study</h3>
+              <p>Comparison of neutral and deflected positions used for authority and clearance checks.</p>
+            </article>
+            <article class="gallery-item">
+              <div class="gallery-item__media">Image placeholder</div>
+              <h3>Section and interface detail</h3>
+              <p>Root/shaft interface, hub attachment, and support features for manufacturability.</p>
+            </article>
+            <article class="gallery-item">
+              <div class="gallery-item__media">Image placeholder</div>
+              <h3>Manufacturing drawing set</h3>
+              <p>Representative drawing sheet for dimensions, tolerances, and assembly references.</p>
+            </article>
+          </div>
         </div>
 
         <div class="project-detail-section fade-in delay-1">
           <h2>Resources</h2>
           <p class="lead project-detail-note">
-            Documents and portfolio materials. Add final reports, posters, or presentation PDFs here as you publish them.
+            Current project documents and references.
           </p>
           <div class="resource-card">
-            <p class="resource-card__label">Portfolio &amp; PDFs</p>
+            <p class="resource-card__label">Project files</p>
             <ul class="resource-list">
-              <li><a href="../eportfolio.html">Capstone ePortfolio (resume, cover letter, context)</a></li>
               <li><a href="../assets/files/designproposal.pdf" target="_blank" rel="noopener noreferrer">Design proposal (PDF)</a></li>
-              <li><a href="../assets/files/resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a></li>
             </ul>
           </div>
         </div>
