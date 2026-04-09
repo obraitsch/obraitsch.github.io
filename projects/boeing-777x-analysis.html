@@ -50,23 +50,25 @@
           <p class="kicker">Jan 2026 – Mar 2026 · AAE 411 — Aerospace Applications, Oregon State University</p>
           <h1>Boeing 777X Aircraft Analysis</h1>
           <p class="lead">
-            Analysis of a modern wide-body transport focusing on wing geometry, reference quantities, aerodynamic and structural estimates, and longitudinal/directional stability using DATCOM.
+            Geometric reconstruction and stability study of the Boeing 777-9, including wing/tail parameter derivation, loading-case CG checks, DATCOM stability derivatives, phugoid characterization, and landing-gear load analysis.
           </p>
         </header>
 
         <div class="project-detail-section fade-in delay-1 project-prose">
           <h2>Overview</h2>
           <p class="lead">
-            The project ties geometric data for the 777X-class configuration to classical analysis steps: locating the mean aerodynamic chord and aerodynamic center, then using numerical methods and DATCOM routines to comment on stability and trim-relevant quantities.
+            This project rebuilt a simplified 3D Boeing 777-9 model from manufacturer dimensions and used it to drive aerodynamic and stability calculations. The report evaluates multiple loading conditions against CG limits and reports positive static stability within the allowable CG envelope.
           </p>
         </div>
 
         <div class="project-detail-section fade-in delay-1 project-prose">
           <h2>Technical work</h2>
           <ul class="list">
-            <li>Extracted and used wing geometry including MAC and aerodynamic center relationships.</li>
-            <li>Performed structural and aerodynamic calculations using course numerical methods.</li>
-            <li>Evaluated static and dynamic stability contributions with DATCOM.</li>
+            <li>Reconstructed wing planform geometry (including piecewise chord distributions and reference areas) from digitized three-view / manufacturer data.</li>
+            <li>Computed MAC, aerodynamic-center-related geometry, and CG positions across empty, MTOW, max-fuel, and landing load cases.</li>
+            <li>Generated longitudinal and lateral-directional stability derivatives with USAF DATCOM at multiple angles of attack and flight conditions.</li>
+            <li>Assessed phugoid characteristics and performed landing-gear reaction checks, including tip-back and turnover-angle calculations.</li>
+            <li>Reported realistic tire-load comparisons against manufacturer ratings and concluded acceptable margins in the analyzed conditions.</li>
           </ul>
         </div>
 
