@@ -425,6 +425,19 @@ p {
   margin: 0.25rem auto 0;
 }
 
+.home-intro-secondary {
+  margin-top: 1rem;
+}
+
+.home-intro-cta {
+  margin-top: 0.65rem;
+  font-size: 0.98rem;
+}
+
+.home-intro-cta .link-inline {
+  font-weight: 600;
+}
+
 .eportfolio-stack {
   margin-top: 2rem;
 }
@@ -669,6 +682,17 @@ p {
 .copy-btn[data-copied="true"] {
   color: var(--accent);
   border-color: var(--accent);
+}
+
+.copy-status {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-top: 1.25rem;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
 }
 
 .not-found {

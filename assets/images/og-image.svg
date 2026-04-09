@@ -14,6 +14,6 @@
   <rect x="80" y="80" width="1040" height="470" rx="28" fill="#fff" opacity="0.85" stroke="rgba(148,163,184,0.25)" stroke-width="2"/>
   <rect x="120" y="280" width="80" height="6" rx="3" fill="url(#accent)"/>
   <text x="120" y="240" font-family="system-ui, Segoe UI, sans-serif" font-size="56" font-weight="700" fill="#0f172a" letter-spacing="-0.04em">Oliver Braitsch</text>
-  <text x="120" y="360" font-family="system-ui, Segoe UI, sans-serif" font-size="28" font-weight="500" fill="#64748b">Mechanical Engineering · Aerospace · Oregon State University</text>
+  <text x="120" y="360" font-family="system-ui, Segoe UI, sans-serif" font-size="28" font-weight="500" fill="#64748b">Mechanical Engineering - Aerospace - Oregon State University</text>
   <text x="120" y="420" font-family="system-ui, Segoe UI, sans-serif" font-size="22" fill="#94a3b8">obraitsch.github.io</text>
 </svg>

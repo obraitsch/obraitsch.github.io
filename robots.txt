@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://obraitsch.github.io/sitemap.xml
